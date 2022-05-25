@@ -1,3 +1,9 @@
 body{
-text-align: center;
+  text-align: center;
+}
+
+.imageandname {
+  width: 350px; 
+  float: left; 
+  margin-right: 10px; 
 }
