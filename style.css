@@ -2,6 +2,6 @@ body{
   text-align: center;
 }
 
-img.rounded-corners {
-  border-radius: 75px;
+img{
+  border-radius: 75%;
 }
