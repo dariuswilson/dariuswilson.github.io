@@ -4,5 +4,9 @@ body{
 }
 
 img{
-  border-radius: 75%;
+  border-radius: 55%;
+}
+
+hr{
+  height: 10%;
 }
