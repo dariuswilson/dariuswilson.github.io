@@ -1,4 +1,4 @@
-head {
-  text-align: center;
-  margin-top: 5px;
+div {
+display: flex;
+justify-content: center;
 }
