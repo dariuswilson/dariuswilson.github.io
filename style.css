@@ -1,6 +1,6 @@
 body{
   text-align: center;
-  word-wrap: normal;  
+  word-wrap: break-word;  
 }
 
 img{
