@@ -2,8 +2,6 @@ body{
   text-align: center;
 }
 
-.imageandname {
-  width: 350px; 
-  float: left; 
-  margin-right: 10px; 
+img.rounded-corners {
+  border-radius: 75px;
 }
