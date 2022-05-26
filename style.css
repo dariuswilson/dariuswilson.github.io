@@ -4,9 +4,6 @@ img{
 
 div.fixed{
   position: absolute;
-  top: 20px;
-  right: 230px;
-  width: 200px;
-  height: 100px;
-  border: 3px solid #73AD21;
+  top: 40px;
+  right: 200px;
 }
