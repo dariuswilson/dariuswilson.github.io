@@ -2,10 +2,10 @@ img{
   border-radius: 55%;
 }
 
-body { 
+div.intro { 
   text-align:center;
-  display:block; 
+/*   display:block;  */
   width:150px; 
-  word-wrap:break-word; 
+  word-wrap:normal; 
 }
 
