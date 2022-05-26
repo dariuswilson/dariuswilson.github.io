@@ -2,6 +2,8 @@ img{
   border-radius: 55%;
 }
 
-body{
-  text-align: center;
+div.intro { 
+    display:block;
+    width:150px;
+    word-wrap:break-word;
 }
