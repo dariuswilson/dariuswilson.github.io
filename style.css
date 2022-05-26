@@ -2,7 +2,10 @@ img{
   border-radius: 55%;
 }
 
-a href {
-  display: block;
-  text-align: center;
+div.fixed{
+  position: fixed;
+  bottom: 100;
+  right: 0;
+  width: 300px;
+  border: 3px solid #73AD21;
 }
