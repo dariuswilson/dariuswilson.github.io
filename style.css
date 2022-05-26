@@ -2,9 +2,9 @@ img{
   border-radius: 55%;
 }
 
-body { 
+div { 
   text-align:center;
-/*   display:block;  */
+  display:block; 
   width:150px; 
   word-wrap:normal; 
 }
