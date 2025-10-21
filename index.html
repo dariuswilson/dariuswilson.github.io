@@ -1,143 +1,346 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <title>Darius Wilson's Website</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="assets/css/main.css" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <title>Your Name's Website</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <style>
+      body {
+        background-color: #0f0f0f;
+        color: #ffffff;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, sans-serif;
+      }
+
+      .gradient-header {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 50vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .social-button {
+        transition: transform 0.2s;
+      }
+
+      .social-button:hover {
+        transform: translateY(-2px);
+      }
+
+      .project-card {
+        background-color: #1a1a1a;
+        border: 1px solid #2a2a2a;
+        transition: all 0.3s;
+      }
+
+      .project-card:hover {
+        border-color: #667eea;
+        transform: translateY(-4px);
+      }
+
+      .status-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.25rem 0.75rem;
+        border-radius: 0.375rem;
+        font-size: 0.875rem;
+      }
+
+      .badge-online {
+        background-color: #10b981;
+        color: white;
+      }
+
+      .badge-playing {
+        background-color: #3b82f6;
+        color: white;
+      }
+
+      .badge-coding {
+        background-color: #6366f1;
+        color: white;
+      }
+
+      .badge-listening {
+        background-color: #1db954;
+        color: white;
+      }
+    </style>
   </head>
-  <body class="is-preload">
+  <body class="bg-black text-white">
+    <!-- Preload Screen -->
+    <div class="gradient-header">
+      <div class="text-center px-4">
+        <h1 class="text-5xl md:text-7xl font-bold mb-8 text-white">
+          Your Name's Website
+        </h1>
 
-    <!-- Wrapper -->
-      <div id="wrapper">
+        <!-- Social Links -->
+        <div class="flex flex-wrap justify-center gap-3 mb-8">
+          <a
+            href="#"
+            class="social-button bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg flex items-center gap-2"
+          >
+            <i class="fab fa-discord"></i> yourusername
+          </a>
+          <a
+            href="#"
+            class="social-button bg-gray-800 hover:bg-gray-700 text-white px-4 py-2 rounded-lg flex items-center gap-2"
+          >
+            <i class="fab fa-github"></i> yourusername
+          </a>
+          <a
+            href="#"
+            class="social-button bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg flex items-center gap-2"
+          >
+            <i class="fab fa-bluesky"></i> @yourusername.bsky.social
+          </a>
+          <a
+            href="#"
+            class="social-button bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-lg flex items-center gap-2"
+          >
+            <i class="fab fa-mastodon"></i> @yourusername@mastodon.social
+          </a>
+          <a
+            href="#"
+            class="social-button bg-blue-400 hover:bg-blue-500 text-white px-4 py-2 rounded-lg flex items-center gap-2"
+          >
+            <i class="fab fa-twitter"></i> @yourusername
+          </a>
+          <a
+            href="#"
+            class="social-button bg-orange-600 hover:bg-orange-700 text-white px-4 py-2 rounded-lg flex items-center gap-2"
+          >
+            <i class="fab fa-reddit"></i> u/yourusername
+          </a>
+          <a
+            href="mailto:your.email@example.com"
+            class="social-button bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg flex items-center gap-2"
+          >
+            <i class="fas fa-envelope"></i> your.email@example.com
+          </a>
+        </div>
 
-        <!-- Main -->
-          <div id="main">
-            <div class="inner">
+        <!-- Status Badges -->
+        <div class="flex flex-wrap justify-center gap-3 text-sm">
+          <span class="status-badge badge-online">currently online</span>
+          <span class="status-badge badge-playing">playing nothing rn</span>
+          <span class="status-badge badge-coding"
+            ><i class="fas fa-code"></i> coding nothing rn</span
+          >
+          <span class="status-badge badge-listening"
+            ><i class="fab fa-spotify"></i> listening to nothing rn</span
+          >
+        </div>
+      </div>
+    </div>
 
-              <!-- Header -->
-                <header id="header">
-                  <ul class="icons">
-                    <li><a href="https://www.linkedin.com/in/darius-wilson-07000b88/" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-                    <li><a href="https://www.facebook.com/darius.xu.9/" class="icon brands fa-facebook-f" target="_blank"><span class="label">Facebook</span></a></li>
-                    <li><a href="https://t.snapchat.com/ASaUMF63" target="_blank" class="icon brands fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
-                    <li><a href="https://www.instagram.com/iam_dariusw/" target="_target" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-                    <li><a href="https://github.com/dariuswilson" target="_target" class="icon brands fa-github"><span class="label">Github</span></a></li>
-                  </ul>
-                </header>
-
-              <!-- Banner -->
-                <section id="banner">
-                  <div class="content">
-                    <header>
-                      <h1>Darius Wilson</h1>
-                      <p>Greater Chicago Area</p>
-                    </header>
-                    <h3>About Me</h3>
-                    <p>Hello! I am Darius Wilson, I am an aspiring Computer Science major at University of Illinois at Chicago, and I will be graduating in May 2025.</p>
-                  </div>
-                  <span class="image object">
-                    <img src="https://i.imgur.com/15DPuVH.png" alt="Main Picture" />
-                  </span>
-                </section>
-
-              <!-- Section -->
-                <section>
-                  <div id ="projects">
-                  <header class="major">
-                    <h2>Projects</h2>
-                  </header>
-                  <div class="posts">
-                    <article>
-                      <a href="https://github.com/dariuswilson/nbachatbot" class="image"><img src="https://logos-world.net/wp-content/uploads/2020/12/Discord-Logo.png" alt="Discord Bot" /></a>
-                      <h3>Discord Bot</h3>
-                      <p>This Discord bot was developed with the goal of improving moderation and providing enhanced functionalities in a large NBA server.</p>
-                    </article>
-                    <article>
-                      <a href="https://github.com/dariuswilson/nbaplayerslist" target="_blank" class="image"><img src="https://github.com/dariuswilson/nbaplayerslist/raw/main/screenshots/select%20a%20team.png" alt="Example" /></a>
-                      <h3>NBA Player List</h3>
-                      <p>A simple React web application that allows uers to select a NBA team from a dropdown. The players of the selected team will be displayed in a list below.</p>
-                    </article>
-                    <article>
-                      <a href="https://replit.com/@DariusWilson3/Snowman-Project-1#main.py" target="_blank" class="image"><img src="https://miro.medium.com/max/1400/1*s7G2qrvq-jYr6BGJcVMrxA.jpeg" alt="Python Turtle Graphics" /></a>
-                      <h3>Python Graphics - Snowman</h3>
-                      <p>Using python turtle graphics, create anything using shapes. The main part of this project was to animate or change something each time the program ran.</p>
-                    </article>
-                    <article>
-                      <a href="https://replit.com/@DariusWilson3/Knight-Escape#main.cpp" target="_blank" class="image"><img src="https://www.tutorialspoint.com/assets/questions/media/36494/knight_moves.jpg" alt="Knight Escape" /></a>
-                      <h3>Knight Escape</h3>
-                      <p>The objective is to get the white knight to the empty square, knights can only move in a valid L shape, this game is similar to chess.</p>
-                    </article>
-                  </div>
-                </div>
-                </section>
-            </div>
-          </div>
-
-        <!-- Sidebar -->
-          <div id="sidebar">
-            <div class="inner">
-
-              <!-- Menu -->
-                <nav id="menu">
-                  <header class="major">
-                    <h2>Menu</h2>
-                  </header>
-                  <ul>
-                    <li><a href="index.html">Homepage</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                </nav>
-
-              <!-- Section -->
-                <section>
-                  <header class="major">
-                    <h2>Languages Known</h2>
-                  </header>
-                  <div class="mini-posts">
-                    <article>
-                      <p>C/C++,</p>
-                      <br>
-                      <p>HTML/CSS,</p>
-                      <br>
-                      <p>Python,</p>
-                      <br>
-                      <p>JavaScript,</p>
-                      <br>
-                      <p>ReactJS,</p>
-                      <br>
-                      <p>ExpressJS,</p>
-                      <br>
-                      <p>NodeJS</p>
-                    </article>
-                  </div>
-                </section>
-
-              <!-- Section -->
-                <section>
-                  <header class="major">
-                    <h2>Contact Me</h2>
-                  </header>
-                  <ul class="contact">
-                    <li class="icon solid fa-envelope"><a href="mailto:dariuswilsonxu@gmail.com">dariuswilsonxu@gmail.com</a></li>
-                  </ul>
-                </section>
-
-              <!-- Footer -->
-                <footer id="footer">
-                  <p class="copyright">&copy; Untitled. All rights reserved.<a href="https://html5up.net">HTML5 UP</a>.</p>
-                </footer>
-
-            </div>
-          </div>
-
+    <!-- Main Content -->
+    <div class="max-w-6xl mx-auto px-4 py-12">
+      <!-- Welcome Section -->
+      <div class="mb-16">
+        <p class="text-xl md:text-2xl text-gray-300">
+          Hey! Welcome to my personal website. Here you can find cool stuff I
+          work on.
+        </p>
       </div>
 
-    <!-- Scripts -->
-      <script src="assets/js/jquery.min.js"></script>
-      <script src="assets/js/browser.min.js"></script>
-      <script src="assets/js/breakpoints.min.js"></script>
-      <script src="assets/js/util.js"></script>
-      <script src="assets/js/main.js"></script>
+      <!-- Projects Section -->
+      <section class="mb-16">
+        <h2 class="text-4xl md:text-5xl font-bold mb-8 text-cyan-400">
+          <i class="fab fa-discord"></i> Discord Bots
+        </h2>
 
+        <!-- Project Card 1 -->
+        <div class="project-card rounded-lg p-6 mb-6">
+          <div class="flex items-start gap-4 mb-4">
+            <div class="text-6xl">🚀</div>
+            <div class="flex-1">
+              <h3 class="text-2xl font-bold mb-2">
+                <span class="text-cyan-400">Your</span
+                ><span class="text-purple-400">Bot</span>
+              </h3>
+              <p class="text-gray-300 mb-4">
+                A cool multipurpose Discord bot with commands for fun, animals,
+                searching, utility, text, info, moderation, urls, and emoji.
+              </p>
+              <div class="flex flex-wrap gap-3">
+                <span class="bg-green-600 text-white px-3 py-1 rounded text-sm"
+                  >servers 1234</span
+                >
+                <span class="bg-blue-600 text-white px-3 py-1 rounded text-sm"
+                  ><i class="fab fa-discord"></i> chat 50 online</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Card 2 -->
+        <div class="project-card rounded-lg p-6 mb-6">
+          <div class="flex items-start gap-4 mb-4">
+            <div class="text-6xl">🎮</div>
+            <div class="flex-1">
+              <h3 class="text-2xl font-bold mb-2 text-red-400">Activities</h3>
+              <p class="text-gray-300 mb-4">
+                Play games and watch YouTube together in voice channels.
+              </p>
+              <div class="flex flex-wrap gap-3">
+                <span class="bg-green-600 text-white px-3 py-1 rounded text-sm"
+                  >servers 12345</span
+                >
+                <span class="bg-blue-600 text-white px-3 py-1 rounded text-sm"
+                  ><i class="fab fa-discord"></i> chat 100 online</span
+                >
+                <span class="bg-gray-700 text-white px-3 py-1 rounded text-sm"
+                  ><i class="fab fa-github"></i> stars 123</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Card 3 -->
+        <div class="project-card rounded-lg p-6 mb-6">
+          <div class="flex items-start gap-4 mb-4">
+            <div class="text-6xl">✅</div>
+            <div class="flex-1">
+              <h3 class="text-2xl font-bold mb-2">
+                <span class="text-green-400">Yes</span
+                ><span class="text-red-400">No</span>
+              </h3>
+              <p class="text-gray-300 mb-4">
+                A simple Discord yes/no poll bot, based on the bot built in to
+                Allo.
+              </p>
+              <div class="flex flex-wrap gap-3">
+                <span class="bg-green-600 text-white px-3 py-1 rounded text-sm"
+                  >servers 500</span
+                >
+                <span class="bg-blue-600 text-white px-3 py-1 rounded text-sm"
+                  ><i class="fab fa-discord"></i> chat 25 online</span
+                >
+                <span class="bg-gray-700 text-white px-3 py-1 rounded text-sm"
+                  ><i class="fab fa-github"></i> stars 15</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Card 4 -->
+        <div class="project-card rounded-lg p-6 mb-6">
+          <div class="flex items-start gap-4 mb-4">
+            <div class="text-6xl">💬</div>
+            <div class="flex-1">
+              <h3 class="text-2xl font-bold mb-2 text-purple-400">WidgetBot</h3>
+              <p class="text-gray-300 mb-4">
+                Embed your Discord server on your website! Let guests read and
+                send messages in real time, even if they don't have a Discord
+                account. (aka DisWeb)
+              </p>
+              <div class="flex flex-wrap gap-3">
+                <span class="bg-blue-600 text-white px-3 py-1 rounded text-sm"
+                  ><i class="fab fa-discord"></i> chat on discord</span
+                >
+                <span class="bg-gray-700 text-white px-3 py-1 rounded text-sm"
+                  ><i class="fab fa-github"></i> stars 75</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sites Section -->
+      <section class="mb-16">
+        <h2 class="text-4xl md:text-5xl font-bold mb-8 text-cyan-400">
+          <i class="fas fa-laptop"></i> Sites
+        </h2>
+
+        <div class="project-card rounded-lg p-6 mb-6">
+          <div class="flex items-start gap-4 mb-4">
+            <div class="text-6xl">📊</div>
+            <div class="flex-1">
+              <h3 class="text-2xl font-bold mb-2 text-blue-400">
+                Discord Extreme List
+              </h3>
+              <p class="text-gray-300 mb-4">
+                Discord's unbiased list, giving bots and servers of all sizes a
+                big chance!
+              </p>
+              <div class="flex flex-wrap gap-3">
+                <span class="bg-blue-600 text-white px-3 py-1 rounded text-sm"
+                  ><i class="fab fa-discord"></i> chat 150 online</span
+                >
+                <span class="bg-gray-700 text-white px-3 py-1 rounded text-sm"
+                  ><i class="fab fa-github"></i> stars 50</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- More Section -->
+      <section class="mb-16">
+        <h2 class="text-4xl md:text-5xl font-bold mb-8 text-cyan-400">More</h2>
+        <p class="text-gray-300 text-lg mb-4">
+          Check out my
+          <a
+            href="https://github.com/yourusername"
+            class="text-blue-400 hover:underline"
+            >GitHub</a
+          >
+          for more projects!
+        </p>
+      </section>
+
+      <!-- Footer -->
+      <footer class="border-t border-gray-800 pt-8 mt-16 text-gray-400 text-sm">
+        <p class="mb-2">
+          This site was made by hand with HTML and CSS. Made with
+          <a
+            href="https://tailwindcss.com"
+            class="text-blue-400 hover:underline"
+            >Tailwind CSS</a
+          >. Icons powered by
+          <a
+            href="https://fontawesome.com"
+            class="text-blue-400 hover:underline"
+            >Font Awesome</a
+          >. Badges powered by
+          <a href="https://shields.io" class="text-blue-400 hover:underline"
+            >Shields.io</a
+          >. Hosted on
+          <a
+            href="https://pages.github.com"
+            class="text-blue-400 hover:underline"
+            >GitHub Pages</a
+          >. You can look at
+          <a
+            href="https://github.com/yourusername/yourusername.github.io"
+            class="text-blue-400 hover:underline"
+            >the source</a
+          >. Thanks for checking out my site.
+        </p>
+        <p class="mb-4">© 2024-2025 Your Name</p>
+      </footer>
+    </div>
   </body>
 </html>
